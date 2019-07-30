@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space Cowboys</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <header class="uk-light">
+        <nav class="uk-container uk-container-large uk-navbar-transparent" data-uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="" class="uk-logo">
+                    <img src="assets/img/icons/Logo.svg" alt="logo" title="logo">
+                </a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul id="menu-desktop" class="uk-navbar-nav uk-visible@m">
+                    <li>
+                        <a href="" class="uk-text-bold uk-text-uppercase">about us</a>
+                    </li>
+                    <li>
+                        <a href="" class="uk-text-bold uk-text-uppercase">the team</a>
+                    </li>
+                    <li>
+                        <a href="" class="uk-text-bold uk-text-uppercase">impressions</a>
+                    </li>
+                    <li>
+                        <a href="" class="uk-text-bold uk-text-uppercase">contact</a>
+                    </li>
+                </ul>
+                <ul class="uk-navbar-nav uk-hidden@m">
+                    <li>
+                        <a id="open-menu" class="menu-btn uk-text-bold uk-text-uppercase" href="">menu</a>
+                    </li>
+                    <li>
+                        <a id="close-menu" class="menu-btn uk-text-bold" href="">
+                            <span>
+                                <img src="assets/img/icons/close.svg" alt="">
+                            </span>
+                            <span>
+                                close
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- hero section -->
+    <section id="hero" class="hidden">
+        <div class="uk-text-center">
+            <h1 class="uk-title uk-text-break uk-text-bold uk-text-uppercase uk-text-center">
+                hey there, we are <br> spacecowboys
+            </h1>
+            <h5 class="uk-title uk-text-bold uk-text-uppercase uk-text-center uk-margin-remove-top">
+                - an independent space agency -
+            </h5>
+            <button id="hero-btn" class="btn uk-text-bold uk-text-uppercase">learn more</button>
+        </div>
+    </section>
+    <!-- facts section -->
+    <section id="facts" class="bg uk-light">
+        <div class="uk-container">
+            <div>
+            <h1 class="uk-heading uk-text-bold uk-text-uppercase uk-margin-medium">
+                a few facts about us
+            </h1>
+            <p class="title-4">
+                Before you do business with us, <br> you might want to know a little bit more about our company:
+            </p>
+            </div>
+            <div class="uk-flex uk-flex-center uk-child-width-1-3@m uk-child-width-1-2@s uk-padding-small uk-padding-remove-vertical" data-uk-grid>
+                <div class="uk-margin-large uk-margin-large-top uk-margin-remove-horizontal">
+                    <div class="uk-card uk-card-hover uk-card-default uk-height-1-1 uk-padding uk-position-relative">
+                        <span class="icon">
+                            <img src="assets/img/icons/Form 1.svg" alt="">
+                        </span>
+                        <h3 class="uk-title uk-text-bold uk-text-uppercase uk-margin-top">
+                            we are cowboys
+                        </h3>
+                        <p>
+                            You might have guessed that from our company name, but the fact is: <br> Yes, we are indeed cowboys. Cowboys who‘d like to go to space.
+                            Deal with it.
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-margin-large uk-margin-remove-horizontal">
+                    <div class="uk-card uk-card-hover uk-height-1-1 uk-card-default uk-padding uk-position-relative">
+                        <span class="icon">
+                            <img src="assets/img/icons/Form 5.svg" alt="">
+                        </span>
+                        <h3 class="uk-title uk-text-bold uk-text-uppercase uk-margin-top">
+                            we like to tinker
+                        </h3>
+                        <p>
+                            There are a lot of things lying around on a typical Cowboy Ranch. So we started putting them together, and got really good at rocket building.  
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-margin-large uk-margin-remove-horizontal">
+                    <div class="uk-card uk-card-hover uk-height-1-1 uk-card-default uk-padding uk-position-relative">
+                        <span class="icon">
+                            <img src="assets/img/icons/Form 4.svg" alt="">
+                        </span>
+                        <h3 class="uk-title uk-text-bold uk-text-uppercase uk-margin-top">
+                            we explore space
+                        </h3>
+                        <p>
+                            Once we got our first proper rocket, everything went quite fast. And now we are the #1 independent space agency in the world. 
+                            Who would have guessed?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team section -->
+    <section id="team" class="bg uk-light uk-position-relative">
+        <div class="overlay"></div>
+        <div class="uk-container">
+            <h1 class="uk-title uk-text-bold uk-text-uppercase uk-text-center">
+                the team
+            </h1>
+            <p class="title-4 color-primary">
+                Yep, that‘s us. Five fine fellows, eager to get on the next adventure. <br> Click on the pictures to get some more information!
+            </p>
+            <div id="team-cowboys" class="uk-flex uk-flex-center uk-child-width-1-3@l uk-child-width-1-2@m uk-visible@m" data-uk-grid>
+                <div>
+                    <div class="card uk-position-relative">
+                        <div class="card_front">
+                            <div class="uk-card uk-flex">
+                                <div class="uk-card-media-left card-image">
+                                    <img src="assets/img/team/cowboy-1@1X.jpeg" alt="">
+                                </div>
+                                <div class="uk-card-body uk-card-small uk-text-left">
+                                    <h4 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        dick <br> harvey
+                                    </h4>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-small-bottom uk-margin-small-top">
+                                        captain
+                                    </h6>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        age: 56
+                                    </h6>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        missions: 13
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_back">
+                            <p class="notes uk-text-uppercase">
+                                dick's famous quote:
+                            </p>
+                            <i class="quote">
+                                „This is a small step for me,
+                                but a big step for, like, 
+                                a small kid“
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card uk-position-relative">
+                        <div class="card_front">
+                            <div class="uk-card uk-flex">
+                                <div class="uk-card-media-left card-image">
+                                    <img src="assets/img/team/cowboy-2@1X.jpeg" alt="">
+                                </div>
+                                <div class="uk-card-body uk-card-small uk-text-left">
+                                    <h4 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        richie <br> farhem
+                                    </h4>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-small-bottom uk-margin-small-top">
+                                        engineer
+                                    </h6>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        age: 48
+                                    </h6>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        missions: 13
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_back">
+                            <p class="notes uk-text-uppercase">
+                                richie's famous quote:
+                            </p>
+                            <i class="quote">
+                                „This is a small step for me,
+                                but a big step for, like, 
+                                a small kid“
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card uk-position-relative">
+                        <div class="card_front">
+                            <div class="uk-card uk-flex">
+                                <div class="uk-card-media-left card-image">
+                                    <img src="assets/img/team/cowboy-3@1X.jpeg" alt="">
+                                </div>
+                                <div class="uk-card-body uk-card-small uk-text-left">
+                                    <h4 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        john <br> siracha
+                                    </h4>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-small-bottom uk-margin-small-top">
+                                        gunslinger
+                                    </h6>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        age: 47
+                                    </h6>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        missions: 13
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_back">
+                            <p class="notes uk-text-uppercase">
+                                john's famous quote:
+                            </p>
+                            <i class="quote">
+                                „This is a small step for me,
+                                but a big step for, like, 
+                                a small kid“
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card uk-position-relative">
+                        <div class="card_front">
+                            <div class="uk-card uk-flex">
+                                <div class="uk-card-media-left card-image">
+                                    <img src="assets/img/team/cowboy-4@1X.jpeg" alt="">
+                                </div>
+                                <div class="uk-card-body uk-card-small uk-text-left">
+                                    <h4 class="uk-title uk-text-bold uk-margin-remove">
+                                        BERT <br> McNAMERA
+                                    </h4>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-small-bottom uk-margin-small-top">
+                                        captain
+                                    </h6>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        age: 71
+                                    </h6>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        missions: 13
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_back">
+                            <p class="notes uk-text-uppercase">
+                                berts's famous quote:
+                            </p>
+                            <i class="quote">
+                                „This is a small step for me,
+                                but a big step for, like, 
+                                a small kid“
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card uk-position-relative">
+                        <div class="card_front">
+                            <div class="uk-card uk-flex">
+                                <div class="uk-card-media-left card-image">
+                                    <img src="assets/img/team/cowboy-5@1X.jpeg" alt="">
+                                </div>
+                                <div class="uk-card-body uk-card-small uk-text-left">
+                                    <h4 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        al <br> sveringe
+                                    </h4>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-small-bottom uk-margin-small-top">
+                                        ceo
+                                    </h6>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        age: 76
+                                    </h6>
+                                    <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                        missions: 13
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_back">
+                            <p class="notes uk-text-uppercase">
+                                al's famous quote:
+                            </p>
+                            <i class="quote">
+                                „This is a small step for me,
+                                but a big step for, like, 
+                                a small kid“
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slider" class="uk-position-relative uk-hidden@m" tabindex="-1" data-uk-slider="center: true; animation: slide">
+                <ul class="uk-slider-items uk-grid">
+                    <li>
+                        <div class="card uk-position-relative">
+                            <div class="card_front">
+                                <div class="uk-card uk-flex">
+                                    <div class="uk-card-media-left card-image">
+                                        <img src="assets/img/team/cowboy-1@1X.jpeg" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-card-small uk-text-left">
+                                        <h4 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            dick <br> harvey
+                                        </h4>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-small-bottom uk-margin-small-top">
+                                            captain
+                                        </h6>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            age: 56
+                                        </h6>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            missions: 13
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_back">
+                                <p class="notes uk-text-uppercase">
+                                    dick's famous quote:
+                                </p>
+                                <i class="quote">
+                                    „This is a small step for me,
+                                    but a big step for, like, 
+                                    a small kid“
+                                </i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card uk-position-relative">
+                            <div class="card_front">
+                                <div class="uk-card uk-flex">
+                                    <div class="uk-card-media-left card-image">
+                                        <img src="assets/img/team/cowboy-2@1X.jpeg" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-card-small uk-text-left">
+                                        <h4 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            richie <br> farhem
+                                        </h4>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-small-bottom uk-margin-small-top">
+                                            engineer
+                                        </h6>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            age: 48
+                                        </h6>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            missions: 13
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_back">
+                                <p class="notes uk-text-uppercase">
+                                    richie's famous quote:
+                                </p>
+                                <i class="quote">
+                                    „This is a small step for me,
+                                    but a big step for, like, 
+                                    a small kid“
+                                </i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card uk-position-relative">
+                            <div class="card_front">
+                                <div class="uk-card uk-flex">
+                                    <div class="uk-card-media-left card-image">
+                                        <img src="assets/img/team/cowboy-3@1X.jpeg" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-card-small uk-text-left">
+                                        <h4 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            john <br> siracha
+                                        </h4>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-small-bottom uk-margin-small-top">
+                                            gunslinger
+                                        </h6>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            age: 47
+                                        </h6>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            missions: 13
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_back">
+                                <p class="notes uk-text-uppercase">
+                                    john's famous quote:
+                                </p>
+                                <i class="quote">
+                                    „This is a small step for me,
+                                    but a big step for, like, 
+                                    a small kid“
+                                </i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card uk-position-relative">
+                            <div class="card_front">
+                                <div class="uk-card uk-flex">
+                                    <div class="uk-card-media-left card-image">
+                                        <img src="assets/img/team/cowboy-4@1X.jpeg" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-card-small uk-text-left">
+                                        <h4 class="uk-title uk-text-bold uk-margin-remove">
+                                            BERT <br> McNAMERA
+                                        </h4>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-small-bottom uk-margin-small-top">
+                                            captain
+                                        </h6>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            age: 71
+                                        </h6>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            missions: 13
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_back">
+                                <p class="notes uk-text-uppercase">
+                                    berts's famous quote:
+                                </p>
+                                <i class="quote">
+                                    „This is a small step for me,
+                                    but a big step for, like, 
+                                    a small kid“
+                                </i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card uk-position-relative">
+                            <div class="card_front">
+                                <div class="uk-card uk-flex">
+                                    <div class="uk-card-media-left card-image">
+                                        <img src="assets/img/team/cowboy-5@1X.jpeg" alt="">
+                                    </div>
+                                    <div class="uk-card-body uk-card-small uk-text-left">
+                                        <h4 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            al <br> sveringe
+                                        </h4>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-small-bottom uk-margin-small-top">
+                                            ceo
+                                        </h6>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            age: 76
+                                        </h6>
+                                        <h6 class="uk-title uk-text-bold uk-text-uppercase uk-margin-remove">
+                                            missions: 13
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_back">
+                                <p class="notes uk-text-uppercase">
+                                    al's famous quote:
+                                </p>
+                                <i class="quote">
+                                    „This is a small step for me,
+                                    but a big step for, like, 
+                                    a small kid“
+                                </i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-margin-large-top"></ul>
+                <a id="slider-prev" class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
+                    <img src="assets/img/icons/ellipse.png" alt="">
+                </a>
+                <a id="slider-next" class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slider-item="next">
+                    <img src="assets/img/icons/ellipse.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- gallery section -->
+    <section id="gallery" class="bg uk-light">
+        <div class="uk-container uk-text-center">
+            <h1 class="uk-title uk-text-uppercase uk-text-bold">
+                look at all those stars
+            </h1>
+            <p class="title-4">
+                Some impressions from our trips to frickin outer space, enjoy!
+            </p> 
+            <div class="uk-flex uk-flex-center uk-child-width-1-6@m uk-child-width-1-4@s uk-child-width-1-3 uk-padding uk-padding-remove-horizontal" data-uk-grid data-uk-lightbox="animation: slide">
+                <div>
+                    <a href="assets/img/lightbox/2@1X.jpeg" class="uk-card" data-caption="Well this was amazing">
+                        <img src="assets/img/gallery/1@1X.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="assets/img/gallery/2@1X.png" class="uk-card" data-caption="Caption 1">
+                        <img src="assets/img/gallery/2@1X.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="assets/img/lightbox/2@1X.jpeg" class="uk-card" data-caption="Caption 1">
+                        <img src="assets/img/gallery/3@1X.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="assets/img/lightbox/2@1X.jpeg" class="uk-card" data-caption="Caption 1">
+                        <img src="assets/img/gallery/4@1X.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="assets/img/lightbox/2@1X.jpeg" class="uk-card" data-caption="Caption 1">
+                        <img src="assets/img/gallery/5@1X.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="assets/img/lightbox/2@1X.jpeg" class="uk-card" data-caption="Caption 1">
+                        <img src="assets/img/gallery/6@1X.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="assets/img/lightbox/2@1X.jpeg" class="uk-card" data-caption="Caption 1">
+                        <img src="assets/img/gallery/7@1X.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="assets/img/lightbox/2@1X.jpeg" class="uk-card" data-caption="Caption 1">
+                        <img src="assets/img/gallery/8@1X.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="assets/img/lightbox/2@1X.jpeg" class="uk-card" data-caption="Caption 1">
+                        <img src="assets/img/gallery/9@1X.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="assets/img/lightbox/2@1X.jpeg" class="uk-card" data-caption="Caption 1">
+                        <img src="assets/img/gallery/10@1X.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="assets/img/lightbox/2@1X.jpeg" class="uk-card" data-caption="Caption 1">
+                        <img src="assets/img/gallery/11@1X.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="assets/img/lightbox/2@1X.jpeg" class="uk-card" data-caption="Caption 2">
+                        <img src="assets/img/gallery/12@1X.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- form section -->
+    <section id="form" class="bg">
+        <div class="uk-container uk-text-center">
+            <h1 class="title-2 uk-text-bold uk-text-uppercase">
+                say hello
+            </h1>
+            <p class="title-4 color-secondary uk-margin-large-bottom">
+                Got some questions about us? Wanna do business with us? <br> Or do you just want to send us your latest cat-content - there you go:
+            </p>
+            <form action="" class="uk-padding uk-padding-remove-horizontal uk-width-2-3@s uk-width-5-6 uk-margin-auto">
+                <fieldset class="uk-fieldset">
+                    <div id="form-field" class="uk-flex uk-child-width-1-2@m" data-uk-grid>
+                        <div>
+                            <div class="uk-margin uk-position-relative">
+                                <div class="errors uk-form-danger uk-text-bold uk-text-left uk-margin-small-bottom">Sorry, that's not valid First name</div>
+                                <input type="text" class="form-field uk-input uk-padding-small" name="firstname" placeholder="First Name">
+                            </div>
+                            <div class="uk-margin">
+                                    <div class="errors uk-form-danger uk-text-bold uk-text-left uk-margin-small-bottom">Sorry, that's not valid Last name</div>
+                                <input type="text" class="form-field uk-input uk-padding-small" name="lastname" placeholder="Last Name">
+                            </div>
+                            <div class="uk-margin">
+                                    <div class="errors uk-form-danger uk-text-bold uk-text-left uk-margin-small-bottom">Sorry, that's not valid E-mail address</div>
+                                <input type="email" class="form-field uk-input uk-padding-small" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="errors uk-form-danger uk-text-bold uk-text-left uk-margin-small-bottom">Sorry, this field is required</div>
+                            <textarea name="" id="" cols="30" rows="5" class="form-field uk-textarea uk-padding-small uk-height-1-1" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <button id="btn-form" class="btn uk-text-bold uk-text-uppercase">send that email</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="uk-container uk-text-center">
+            <p class="title-6 uk-text-bold">
+                Copyright © 2015
+            </p>
+            <p class="title-5 uk-text-bold uk-text-uppercase">
+                space <span id="footer-icon"><img src="assets/img/icons/Logo_footer@1X.png" alt=""></span> cowboy
+            </p>
+        </div>
+    </footer>
+    <div class="menu-overlay">
+        <div id="menu-mobile">
+            <div class="uk-text-center">
+                <a href="" class="color-primary uk-text-bold uk-text-uppercase uk-h2">about us</a>
+                <a href="" class="color-primary uk-text-bold uk-text-uppercase uk-h2">the team</a>
+                <a href="" class="color-primary uk-text-bold uk-text-uppercase uk-h2">impressions</a>
+                <a href="" class="color-primary uk-text-bold uk-text-uppercase uk-h2">contact</a>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
