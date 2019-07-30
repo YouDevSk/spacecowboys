@@ -591,9 +591,6 @@ footer p {
 }
 
 @media(max-width: 600px){
-    br {
-        display: none;
-    }
 
     .title-4 {
         font-size: 14pt;
